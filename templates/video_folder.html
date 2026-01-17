@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>私密视频文件夹</h2>
+
+<form action="{{ url_for('upload_video') }}"
+      method="post"
+      enctype="multipart/form-data">
+  <input type="file" name="video">
+  <button type="submit">上传</button>
+</form>
+
+<hr>
+
+{% for v in videos %}
+  <video width="400" controls>
+    <source src="{{ url_for('serve_video', filename=v) }}" type="video/mp4">
+  </video>
+  <br><br>
+{% endfor %}
+
+{% endblock %}

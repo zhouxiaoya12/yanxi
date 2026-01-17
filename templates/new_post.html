@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>新建文章</h2>
+
+<form method="post">
+  {{ form.hidden_tag() }}
+
+  <p>
+    {{ form.title.label }}<br>
+    {{ form.title() }}
+  </p>
+
+  <p>
+    {{ form.content.label }}<br>
+    {{ form.content() }}
+  </p>
+
+  <button type="submit">发布</button>
+</form>
+
+{% endblock %}

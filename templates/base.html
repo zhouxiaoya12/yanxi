@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+
+<nav>
+  <a href="{{ url_for('index') }}">首页</a>
+  <a href="{{ url_for('new_post') }}">新建文章</a>
+  <a href="{{ url_for('video_folder') }}">私密内容</a>
+</nav>
+
+<hr>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* ========== 全局基础 ========== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #e6f6e9; /* 淡淡的绿色，像安全空间 */
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ========== 顶部导航 ========== */
+nav {
+    background: #c9ebd2;
+    padding: 12px 20px;
+}
+
+nav a {
+    margin-right: 16px;
+    color: #1f5f3b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ========== 页面容器 ========== */
+.container {
+    max-width: 820px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ========== 标题 ========== */
+h1, h2, h3 {
+    font-weight: 600;
+    color: #144a2d;
+}
+
+/* ========== 输入框 & 按钮 ========== */
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #9ac8ab;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+button {
+    background: #4fa47a;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3f8f67;
+}
+
+/* ========== 私密空间区域 ========== */
+.secret-box {
+    background: #ffffffaa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+/* ========== 文章卡片 ========== */
+.post-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.post-card h2 {
+    margin-top: 0;
+}
+
+
+/*=============删除样式=============*/
+.delete-btn {
+    background: #b33;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background: #922;
+}
+
+
+/* ========== 响应式：手机 ========== */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+.container {
+    max-width: 820px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
